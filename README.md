@@ -19,7 +19,7 @@
 * Lay down two buttons and two labels
 * Modify attributes like color, text, size
 
-## Auto layout:
+### Auto layout:
 * Show why do we need it
   * Phones with different sizes
   * Different orientation support
