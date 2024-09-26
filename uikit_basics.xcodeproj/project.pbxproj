@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17DD58312CA5A387002D39B5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DD58302CA5A387002D39B5 /* DetailViewController.xib */; };
+		17DD58322CA5A387002D39B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD582F2CA5A387002D39B5 /* DetailViewController.swift */; };
 		7E6805CE2AB66ABE000E39F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6805CD2AB66ABE000E39F2 /* AppDelegate.swift */; };
 		7E6805D02AB66ABE000E39F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6805CF2AB66ABE000E39F2 /* SceneDelegate.swift */; };
 		7E6805D22AB66ABE000E39F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6805D12AB66ABE000E39F2 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17DD582F2CA5A387002D39B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		17DD58302CA5A387002D39B5 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		7E6805CA2AB66ABE000E39F2 /* uikit_basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikit_basics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6805CD2AB66ABE000E39F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6805CF2AB66ABE000E39F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				7E6805D62AB66ABF000E39F2 /* Assets.xcassets */,
 				7E6805D82AB66ABF000E39F2 /* LaunchScreen.storyboard */,
 				7E6805DB2AB66ABF000E39F2 /* Info.plist */,
+				17DD582F2CA5A387002D39B5 /* DetailViewController.swift */,
+				17DD58302CA5A387002D39B5 /* DetailViewController.xib */,
 			);
 			path = uikit_basics;
 			sourceTree = "<group>";
@@ -96,7 +102,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					7E6805C92AB66ABE000E39F2 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -112,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 7E6805C12AB66ABE000E39F2;
+			packageReferences = (
+				179B22C12C9DBAA3002330EB /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			productRefGroup = 7E6805CB2AB66ABE000E39F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +138,7 @@
 				7E6805DA2AB66ABF000E39F2 /* LaunchScreen.storyboard in Resources */,
 				7E6805D72AB66ABF000E39F2 /* Assets.xcassets in Resources */,
 				7E6805D52AB66ABE000E39F2 /* Main.storyboard in Resources */,
+				17DD58312CA5A387002D39B5 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +174,7 @@
 				7E6805D22AB66ABE000E39F2 /* ViewController.swift in Sources */,
 				7E6805CE2AB66ABE000E39F2 /* AppDelegate.swift in Sources */,
 				7E6805D02AB66ABE000E39F2 /* SceneDelegate.swift in Sources */,
+				17DD58322CA5A387002D39B5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +236,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -285,6 +297,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -381,6 +394,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		179B22C12C9DBAA3002330EB /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7E6805C22AB66ABE000E39F2 /* Project object */;
 }
